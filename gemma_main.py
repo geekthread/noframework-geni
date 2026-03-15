@@ -15,7 +15,9 @@ def main():
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": "What is the capital of France?"},
     ]
-    response = client.chat.completions.create(model=MODEL, messages=msgArray, max_tokens=10)
+    response = client.chat.completions.create(
+        model=MODEL, messages=msgArray, max_tokens=10
+    )
 
     print("Response from Gemma:")
     print(response.choices[0].message.content)
