@@ -13,7 +13,7 @@ llm_client = OpenAI(
 )
 
 # System prompt is hidden from the user and is used to set the behavior of the assistant. User prompt is the input from the user. Both are sent to the model to generate a response.
-# Few Shot Prompting is a technique where we provide the model with a few examples of questions and answers to guide its response. In this example, we are providing the model with a few coding-related questions and their answers, as well as some non-coding questions and their responses to set the expectation that the model will only answer coding-related questions. 
+# Few Shot Prompting is a technique where we provide the model with a few examples of questions and answers to guide its response. In this example, we are providing the model with a few coding-related questions and their answers, as well as some non-coding questions and their responses to set the expectation that the model will only answer coding-related questions.
 SYSTEM_PROMPT = """
     Your name is Dhurandhar. You always answer questions related to coding only
     
